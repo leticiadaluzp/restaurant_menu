@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebf1e2;
+}
+
+.menu {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.underline {
+    width: 100px;
+    height: 4px;
+    background-color: #ff7f50;
+    margin: 0 auto;
+}
+
+/* Estilos para los filtros */
+.filters {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.filter-btn {
+    margin: 10px 15px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background-color: #fcaf68;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    min-width: 150px;
+}
+
+.filter-btn:hover {
+    background-color: #e6603e;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 750px) {
+    .filter-btn {
+        display: block; /* Cambiar a mostrar los botones uno debajo del otro */
+        margin: 10px auto; /* Centrar los botones */
+    }
+}
+
+/* Estilos para los elementos del menú */
+.section-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.menu-item {
+    width: calc(50% - 15px); /* Para que dos elementos entren en una línea con espacio entre ellos */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.photo {
+    width: 100%; /* Ajustamos la imagen al ancho del contenedor */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Ajuste para mantener la relación de aspecto */
+    border-radius: 0; /* Imágenes rectangulares */
+}
+
+.item-info {
+    padding: 20px;
+}
+
+.item-info header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-info h4 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.price {
+    background-color: #30251bec; /* Fondo de color naranja claro */
+    color: #ffffff;
+    padding: 5px 10px; /* Ajustar el relleno para que se ajuste al texto */
+    border-radius: 8px; /* Ajustar el radio de borde */
+    display: inline-block; /* Hacer que el fondo de color se ajuste al tamaño del contenido */
+}
+
+.item-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Estilos para el botón */
+.modal-btn {
+    padding: 15px 30px; /* Aumentar el tamaño del botón */
+    background-color: #fcaf68; /* Color naranja claro */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    z-index: 9999; /* Asegura que el modal esté en la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%; /* Ancho máximo del contenido del modal */
+    max-height: 80%; /* Altura máxima del contenido del modal */
+    overflow: auto; /* Agregar desplazamiento si el contenido es demasiado grande */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}

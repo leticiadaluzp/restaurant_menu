@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0" />
+        <title>Menu</title>
+        <!-- font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section class="menu">
+            <!-- title -->
+            <div class="title">
+                <h2>Our menu</h2>
+                <div class="underline"></div>
+            </div>
+            <!-- filter button -->
+            <div class="filters">
+                <button class="filter-btn" data-category="main-courses">Main Courses</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="drinks">Drinks</button>
+                <button class="filter-btn" data-category="all">All</button>
+            </div>
+            <!-- menu items -->
+            <div class="section-center">
+                <!-- single item -->
+                <article class="menu-item">
+                    <img src="burger.jpg" class="photo" alt="burger with fries"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Burger with fries</h4> 
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$20</h2>
+                                <p class="item-text">
+                                    Indulge in our classic burger crafted with premium beef patty, topped with fresh lettuce, ripe tomatoes, and melted cheese, all nestled between soft brioche buns. Served with a generous portion of crispy golden fries, it's the ultimate comfort food experience.
+                                </p>
+                            </div>
+                        </div>   
+                    </div>
+                </article>
+                <!-- end of single item -->
+
+                <!-- single item 2 -->
+                <article class="menu-item">
+                    <img src="steak.jpg" class="photo" alt="steak"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Steak</h4>
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$30</h2>
+                                <p class="item-text">
+                                    Savor the succulence of our tender, juicy steak, grilled to perfection and 
+                                    seasoned to enhance its natural flavors. Choose your side: accompany it with a crisp, garden-fresh salad dressed in your choice of vinaigrette, or indulge in our golden, crispy fries for a truly satisfying meal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- end of single item 2 -->
+
+                <!-- single item 3 -->
+                <article class="menu-item">
+                    <img src="risotto.jpg" class="photo" alt="risotto"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Risotto</h4>
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$25</h2>
+                                <p class="item-text">
+                                    Transport your taste buds to Italy with our creamy and flavorful risotto, 
+                                    delicately cooked to achieve the perfect balance of texture and taste. Bursting with the richness of Arborio rice, Parmesan cheese, and a medley of seasonal vegetables, each bite is a culinary delight that's sure to leave you craving for more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- end of single item 3 -->
+
+                <!-- single item 4 -->
+                <article class="menu-item">
+                    <img src="pasta.jpg" class="photo" alt="pasta"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Pasta</h4>
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$35</h2>
+                                <p class="item-text">
+                                    Experience the essence of Italian cuisine with our exquisite pasta dishes, 
+                                    expertly prepared using the finest ingredients and traditional recipes. Whether you prefer the timeless simplicity of spaghetti aglio e olio, the hearty comfort of lasagna layered with savory sauce and melted cheese, or the creamy indulgence of fettuccine Alfredo, our pasta selections promise a culinary journey that's as comforting as it is delicious.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- end of single item 4 -->
+
+                <!-- single item 5 -->
+                <article class="menu-item">
+                    <img src="brownie.jpg" class="photo" alt="brownie"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Brownie with Ice Cream</h4>   
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$15</h2>
+                                <p class="item-text">
+                                    Indulge in the ultimate dessert experience with our decadent brownie served warm and gooey, paired perfectly with a scoop of creamy vanilla ice cream. The rich, fudgy brownie melts in your mouth, while the cold, velvety ice cream adds a delightful contrast, creating a harmonious blend of flavors and textures that will satisfy your sweet cravings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- end of single item 5 -->
+
+                <!-- single item 6 -->
+                <article class="menu-item">
+                    <img src="tiramisu.jpg" class="photo" alt="tiramisu"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Tiramisu</h4>
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$12</h2>
+                                <p class="item-text">
+                                    Transport yourself to the streets of Italy with our authentic tiramisu, a classic Italian dessert that's as rich in history as it is in flavor. Layers of delicate ladyfinger biscuits soaked in espresso and layered with creamy mascarpone cheese, dusted with cocoa powder for the perfect finishing touch. Each bite is a heavenly combination of coffee-infused bliss and velvety smoothness.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- end of single item 6 -->
+
+                <!-- single item 7 -->
+                <article class="menu-item">
+                    <img src="cakes.jpg" class="photo" alt="cakes"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Cakes</h4>
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$15</h2>
+                                <p class="item-text">
+                                    Indulge in our delightful array of cakes, each crafted with love and attention to detail. From rich chocolate ganache to tangy lemon drizzle, our selection offers something for every palate. Whether you crave the comforting sweetness of a classic red velvet or the refreshing zing of a fruit-filled sponge, our cakes are sure to satisfy your dessert desires.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- end of single item 7 -->
+
+                <!-- single item 8 -->
+                <article class="menu-item">
+                    <img src="juices.jpg" class="photo" alt="juices"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Fresh Fruit Juices</h4>
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$10</h2>
+                                <p class="item-text">
+                                    Quench your thirst with our refreshing selection of fresh fruit juices, bursting with vibrant flavors and natural goodness. From zesty orange to sweet watermelon and tangy pineapple, each sip is a taste of pure sunshine. Made from the finest handpicked fruits, our juices are the perfect way to rejuvenate and hydrate, whether enjoyed alone or paired with your favorite meal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- end of single item 8 -->
+
+                <!-- single item 9 -->
+                <article class="menu-item">
+                    <img src="cocktails.jpg" class="photo" alt="cocktails"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Cocktails</h4>
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$15</h2>
+                                <p class="item-text">
+                                    Elevate your evening with our handcrafted cocktails, expertly mixed to perfection by our skilled bartenders. From timeless classics like the Mojito and Margarita to innovative concoctions tailored to suit every taste, our cocktail menu promises a journey of flavors and sensations. Whether you prefer something sweet and fruity or bold and adventurous, our cocktails are sure to delight and inspire.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- end of single item 9 -->
+
+                <!-- single item 10 -->
+                <article class="menu-item">
+                    <img src="milkshakes.jpg" class="photo" alt="milkshakes"/>
+                    <div class="item-info">
+                        <header>
+                            <h4>Milkshakes</h4>
+                        </header>
+                        <button class="modal-btn">Price and Details Here!</button>
+                        <!-- Ventana modal, por defecto no visiblel -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="closeModal">&times;</span>
+                                <h2 class="price">$12</h2>
+                                <p class="item-text">
+                                    Treat yourself to the creamy indulgence of our milkshakes, made with premium ice cream and fresh milk for a luscious, velvety texture. From classic flavors like chocolate and vanilla to indulgent creations loaded with cookies, candies, and sauces, our milkshakes are the ultimate guilty pleasure. Sip and savor the nostalgia of childhood or indulge your inner sweet tooth with our irresistible milkshake selection
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- end of single item 10 -->
+            </div>
+        </section>
+        <!-- javascript -->
+        <script src="app.js"></script>
+    </body>     
+</html>
